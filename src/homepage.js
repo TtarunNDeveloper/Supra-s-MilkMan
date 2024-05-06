@@ -8,6 +8,9 @@ import slideimg4 from './assests/images/jamun.png';
 import slideimg5 from './assests/images/ghee.jpeg';
 import slideimg6 from './assests/images/paneer.png';
 import slideimg7 from './assests/images/milkcake.jpeg';
+import curdbased from './assests/images/curd.png';
+import milkbased from './assests/images/milk.png';
+import others from './assests/images/other.png';
 import offer from './assests/images/download.png';
 const Homepage = () => {
     const images = [
@@ -36,6 +39,10 @@ const Homepage = () => {
       <div className='container'>
         <Navbar />
         <div className='content'>
+          <div className='content-below'>
+            <h4>Quality Dairy Products</h4>
+            <b><h1>Delivering Freshness To Your Doorstep</h1></b>
+          </div>
           <div className='slider'>
             {/* Render each image as a slide within the slider */}
             <div className='slides-container' style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
@@ -58,10 +65,25 @@ const Homepage = () => {
           </div>
         </div>
   
-          <div className='categories'>
-            {/* Circular image buttons */}
-            {/* Add your circular image buttons here */}
-          </div>
+        <div class='categories'>
+    <h3>Shop By Categories</h3>
+    
+    <div class="category">
+        <img src={milkbased} alt="Category 1"/>
+        <a href="#">Milk Products</a>
+    </div>
+
+    <div class="category">
+        <img src={curdbased} alt="Category 2"/>
+        <a href="#">Curd Products</a>
+    </div>
+
+    <div class="category">
+        <img src={others} alt="Category 3"/>
+        <a href="#" style={{padding:'23%'}}>Other</a>
+    </div>
+</div>
+
   
           <div className='additional-content'>
             {/* Paragraph space for additional content */}
