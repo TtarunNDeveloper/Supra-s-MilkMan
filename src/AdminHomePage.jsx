@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './adminhomepage.css';
 import AdminNavbar from './Components/Navbar/AdminNavbar';
+import logo from './assests/images/logo.png';
 
 const AdminHomePage = () => {
   const [page, setPage] = useState('home');
@@ -38,7 +39,7 @@ const AdminHomePage = () => {
       <AdminNavbar setPage={setPage} setShowLogoutDialog={setShowLogoutDialog} />
       <div className="background-image">
         <h1>Welcome Admin</h1>
-        <img src="" alt="Logo" className="logo" />
+        <img src={logo} alt="Logo" className="logo" />
       </div>
       <div className="content-container">
         {renderPage()}
