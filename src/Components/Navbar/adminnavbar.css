@@ -1,0 +1,78 @@
+.admin-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: skyblue;
+  color: #fff;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.home-button,
+.logout-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.home-button img,
+.logout-button img {
+  height: 40px;
+  margin-right: 5px;
+}
+
+.home-button span,
+.logout-button span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.add-new-button,
+.view-edit-button {
+  position: relative;
+}
+
+.add-new-button button,
+.view-edit-button button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content span {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.add-new-button:hover .dropdown-content,
+.view-edit-button:hover .dropdown-content {
+  display: block;
+}
+
+.edit-profile-button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
